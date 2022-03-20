@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.List;
@@ -54,6 +55,13 @@ public class BanhAdapter extends BaseAdapter {
                 Intent intent = new Intent(context, DatHangActivity.class);
                 intent.putExtra("banh", (Serializable) dsBanh.get(position));
                 context.startActivity(intent);
+            }
+        });
+
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "Bạn đã nhấn hàng "+position, Toast.LENGTH_LONG).show();
             }
         });
 

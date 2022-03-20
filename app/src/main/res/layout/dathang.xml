@@ -95,13 +95,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSoLuong"
+        app:layout_constraintEnd_toStartOf="@+id/tvSoLuong"
+        app:layout_constraintTop_toTopOf="@+id/tvSoLuong"
         app:srcCompat="@drawable/group_16" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvSoLuong"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
